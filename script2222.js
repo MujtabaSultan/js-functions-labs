@@ -215,8 +215,9 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
+//doesnt work
 function calculateGrade(value) {
-  switch (true) {
+  switch (value) {
     case value >= 90:
       return "A";
       break;
@@ -227,15 +228,13 @@ function calculateGrade(value) {
       return "C";
       break;
     case value >= 60:
-      return "D";
+      return "d";
       break;
     case value < 60:
       return "F";
       break;
 
     default:
-      return "F";
-
       break;
   }
 }
